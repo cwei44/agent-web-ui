@@ -1,0 +1,13 @@
+*
+!Dockerfile
+!server.js
+!app.js
+!index.html
+!style.css
+!healthcheck.js
+
+!terminal.js
+!xterm.js
+!xterm-fit.js
+!xterm.css
+!XTERM-LICENSE

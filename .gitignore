@@ -1,0 +1,29 @@
+# Local dependencies and generated artifacts
+node_modules/
+build/
+dist/
+__pycache__/
+*.pyc
+*.log
+*.tar
+*.tar.gz
+*.zip
+
+# Runtime data and private configuration
+.env
+.env.*
+!.env.example
+!.env.proxy.example
+web.env
+data/
+workspace/
+auth.json
+credentials.json
+.credentials.json
+conversation.json
+*.pem
+*.key
+IMAGE_ID
+SHA256SUMS
+proxy/apache.conf
+proxy/nginx.conf

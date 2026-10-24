@@ -1,0 +1,16 @@
+*
+!Dockerfile
+!package.json
+!package-lock.json
+!server.js
+!options.js
+!files.js
+!app.js
+!index.html
+!style.css
+!terminal.js
+!xterm.js
+!xterm-fit.js
+!xterm.css
+!XTERM-LICENSE
+!healthcheck.js

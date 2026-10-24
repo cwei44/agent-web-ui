@@ -1,0 +1,13 @@
+node_modules
+**/node_modules
+**/build
+**/dist
+**/__pycache__
+**/*.pyc
+.env
+web.env
+data
+workspace
+*.tar.gz
+
+.git

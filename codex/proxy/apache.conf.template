@@ -1,0 +1,11 @@
+# Include inside the existing HTTP or HTTPS <VirtualHost>.
+# Requires mod_proxy, mod_proxy_http, mod_alias and mod_env.
+ProxyRequests Off
+RedirectMatch 302 ^/codex$ /codex/
+ProxyPass /codex/ http://127.0.0.1:__CODEX_PORT__/codex/ connectiontimeout=5 timeout=600
+ProxyPassReverse /codex/ http://127.0.0.1:__CODEX_PORT__/codex/
+<Location /codex/>
+    ProxyPreserveHost On
+    LimitRequestBody 31457280
+    SetEnv no-gzip 1
+</Location>

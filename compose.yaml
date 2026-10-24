@@ -1,0 +1,14 @@
+services:
+  ai-web:
+    image: ai-web:1.0.0
+    build: .
+    restart: unless-stopped
+    environment:
+      AI_WEB_USERNAME: ${AI_WEB_USERNAME:-admin}
+      AI_WEB_PASSWORD: ${AI_WEB_PASSWORD:?Set AI_WEB_PASSWORD in .env}
+      AI_WEB_PROVIDERS: ${AI_WEB_PROVIDERS:-both}
+    ports:
+      - "${BIND_ADDRESS:-127.0.0.1}:${WEB_PORT:-8082}:8760"
+    volumes:
+      - ./data:/data
+      - ./workspace:/workspace
